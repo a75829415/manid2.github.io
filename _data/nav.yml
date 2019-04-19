@@ -27,7 +27,7 @@ footer:
   - feed:
     - label: "Sitemap"
       icon: "fas fa-sitemap"
-      url: "/sitemap"
+      url: "sitemap"
     - label: "RSS"
       icon: "fas fa-fw fa-rss-square"
-      url: "/feed"
+      url: "feed"
