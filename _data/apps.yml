@@ -1,0 +1,5 @@
+# list of apps
+apps:
+  - title: "LWT"
+    description: "Simple, elegant and efficient theme for solo freelancers."
+    url: "https://manid2.github.io/lone-wolf-theme/"
