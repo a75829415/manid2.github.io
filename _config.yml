@@ -160,3 +160,10 @@ defaults:
       share: true
       show_comments: true
       show_ads: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      show_ads: true

@@ -1,3 +1,10 @@
-<div class="my-3">
-    {%- include google-ads.html -%}
-</div>
+{%- assign ad_src = include.ad_src -%}
+{%- assign ad_type = include.ad_type -%}
+
+{%- case ad_src -%}
+{%- when "google-adsense" -%}
+    {%- include google-adsense.html ad_type=ad_type -%}
+{%- else -%}
+    No Ads
+    {: .lead}
+{%- endcase -%}
