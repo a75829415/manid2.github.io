@@ -4,10 +4,7 @@ excerpt: "Train and test support vector machine (SVM), a supervised \
 machine learning algorithm in OpenCV 4.0 using the Histogram of Oriented Gradients \
 (HOG) as the feature descriptor"
 
-#header:
-#  image: /assets/images/draft_template/
-#  teaser: /assets/images/draft_template/
-#  image_description: "Placeholder draft template header image"
+show_hero: false
 
 categories:
   - tutorials
@@ -23,8 +20,6 @@ tags:
   - Support Vector Machine
   - SVM
 ---
-
-<!-- content - begin -->
 
 In this tutorial we learn how to **train a model of support vector machine**,
 **save the trained model** and **test the model** to check the percentage of its
@@ -42,7 +37,7 @@ prediction accuracy using the latest OpenCV version 4.0.
 
 ## System setup
 
-System Info
+### System Info
 
 | Tools     | Version          |
 | --------- | ---------------- |
@@ -53,13 +48,19 @@ System Info
 | Eclipse   | 2018-09          |
 | Languages | C++, CMake, Bash |
 
-Other softwares
+### Other softwares
 
 1. OpenCV 4.0
 2. Python 3
 3. [imagenetscraper][l_imagenetscraper]
 4. [autocrop][l_autocrop]
 5. Fatkun Batch Download Image
+
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 To install the `opencv` and its dependencies refer the official documents
 [here][l_cv3_doc]. We can also follow any online tutorial we get from google
@@ -128,6 +129,12 @@ confirm the working of all the required modules.
      `ML_SVM.save_load`
      to test SVM model train, save and load.
 
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
+
 ## Write Code
 
 Its a 20 hour long process :sweat_smile: to create the code we need to train
@@ -172,13 +179,15 @@ use of the procedure described here.
 6. Trained and tested a machine learning algorithm to classify an object.
 7. Created ML models ready to be used in [Facial Features Recognition][l_ffr_code].
 
+{% capture note %}
+
+## Note
+
 - Leave a comment to ask anything related to the blog post.
-- Contact me via social media for consultation, guidance, tutorials or any suggestions
-{: .notice--info}
+- Contact me via social media for consultation, guidance, tutorials or any suggestions.
 
-<!-- content - end -->
-
-<!-- images in the post -->
+{% endcapture %}
+<div class="bg-warning p-3">{{ note | markdownify }}</div>
 
 <!-- links in the post -->
 [l_cv3_svm]: https://docs.opencv.org/master/d1/d73/tutorial_introduction_to_svm.html

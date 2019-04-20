@@ -3,14 +3,10 @@ title: "Design Stage in C++ project development"
 excerpt: "Describing the problem definition, solution to the problem and \
           initial C++ code design using the hand written block diagram."
 
-toc: true
-toc_label: "Contents"
-toc_icon: "file-alt"
-
 header:
-  image: /post_cpp_coding_1/header_image.svg
-  teaser: /post_cpp_coding_1/header_image.svg
-  image_description: "Design Stage in C++ project development header image"
+  teaser: post_cpp_coding_1/header_image.svg
+  alt: "Design Stage in C++ project teaser image"
+  caption: "Design Stage in C++ project development"
 
 categories:
   - tutorials
@@ -47,6 +43,12 @@ embedded systems.
 Just two months back I had written the same application in C++ to learn how to a write well designed code in C++.
 The hardest challenge in coding is always the testing. So my code style in C++ is inclined towards
 making the testing easier.
+
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 ## Problem Definition
 
@@ -116,6 +118,12 @@ At the end of the design stage we get the below diagram:
 * **Client**: it is the main function which requests the feature result for an input image.
 * **Base class**: It handles the common functionalities for all the recognizer classes. Provides the public APIs for the client to use. Hides the method implementation in a specific recognizer class.
 * **Specific recognizer classes**: These are the Age, Emotion and Gender classes. These are isolated from each other hence the testing and fixing bugs later from the code becomes easier.
+
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 ## Epilogue
 

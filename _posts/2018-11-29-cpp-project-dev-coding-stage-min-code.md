@@ -3,14 +3,10 @@ title: "Initial coding stage in C++ project"
 excerpt: "Writing the minimum code for the top level code design \
           developed in the design Stage"
 
-toc: true
-toc_label: "Contents"
-toc_icon: "file-alt"
-
 header:
-  image: /post_cpp_coding_2/header_image.svg
-  teaser: /post_cpp_coding_2/header_image.svg
-  image_description: "Initial coding stage in C++ project development header image"
+  teaser: post_cpp_coding_2/header_image.svg
+  alt: "Initial coding stage C++ project teaser image"
+  caption: "Initial coding stage C++ project"
 
 categories:
   - tutorials
@@ -107,7 +103,11 @@ add_executable(${MODULE_NAME} ${SRCS})
 {% endhighlight %}
 *Initial cmake code for the project*
 
-{% include ads.html %}
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 Write the main function (the entry point to the executable) in a separate file
 such as `main.C++`. Let's place the main.C++ file in the project root folder
@@ -259,7 +259,11 @@ int execute(int argc, char **argv) {
 {% endhighlight %}
 *BaseRecognizer.cpp*
 
-{% include ads.html %}
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 **Build** the project from the eclipse by double clicking the target for the
 project. If it shows `undefined reference` error then delete the project from

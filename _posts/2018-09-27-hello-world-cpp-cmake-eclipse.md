@@ -2,14 +2,10 @@
 title: "Hello World C++ application setup using CMake for Eclipse IDE"
 excerpt: "Configuring a simple Hello World C++ project using CMake Builder for Eclipse IDE."
 
-toc: true
-toc_label: "Contents"
-toc_icon: "file-alt"
-
 header:
-#  image: /assets/images/post_cpp_coding_1/header_image.png
-  teaser: /post_hw_cpp/header_image.png
-  teaser_description: "Hello World C++ Project Setup teaser image"
+  teaser: post_hw_cpp/header_image.png
+  alt: "Hello World C++ Project Setup teaser image"
+  caption: "Hello World C++ Project"
 
 categories:
   - tutorials
@@ -27,7 +23,6 @@ Let us create a simple `Hello World` application in C++.
 
 <!-- img_1 - HelloWorld C++ Project Setup in Eclipse IDE screenshot -->
 ![Hello World C++ Project Setup in Eclipse IDE][img_helloworld_C++_project_eclipse_ide]
-{: .align-center}
 
 ## Info
 
@@ -40,7 +35,11 @@ Let us create a simple `Hello World` application in C++.
 | IDE / Editor | Eclipse, Vim & VS Code |
 | Languages    | C++, CMake             |
 
----
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 ## Instructions
 
@@ -80,10 +79,7 @@ Let us create a simple `Hello World` application in C++.
        -DCMAKE_CXX_FLAGS="-std=c++11"\
        -DCMAKE_CXX_COMPILER_ARG1=-std=c++11
    ```
-   {% include ads.html %}
    It generates the project build files, we can then build the application using a system specific builder such as [Make][8] for Linux system or [NMake][9] for Windows system
-
----
 
 ## Summary
 
@@ -93,18 +89,17 @@ Let us create a simple `Hello World` application in C++.
 4. I have more ideas to share in the future posts all of them follow the same project structure, coding style and tools. Hence this introductory post. Stay tuned and follow me on social medias in my bio.
 5. Thank you, for reading. Please leave a comment below or use one of the social media links from my bio.
 
-{% capture notice-2 %}
+{% capture note %}
 
 ## Note
 
-* This blog post is about **Hello World project** in C++ not a program that can be written in a single file.
-
-* The intent of this post is to give you an idea of how to setup a C++ project with CMake for Eclipse IDE.
-
-* This post assumes that you already know programming and have experience in creating, debugging and executing programs in any modern languages such as C, C++, C#, Java or Python.
+- This blog post is about **Hello World project** in C++ not a program that can be written in a single file.
+- The intent of this post is to give you an idea of how to setup a C++ project with CMake for Eclipse IDE.
+- This post assumes that you already know programming and have experience in creating, debugging and executing
+  programs in any modern languages such as C, C++, C#, Java or Python.
 
 {% endcapture %}
-<div class="notice--primary">{{ notice-2 | markdownify }}</div>
+<div class="bg-warning p-3">{{ note | markdownify }}</div>
 
 <!-- images in the post -->
 [img_helloworld_C++_project_eclipse_ide]: {{ site.url }}{{ site.baseurl }}/assets/images/post_hw_cpp/helloworld_cpp.png  "Hello World C++ Project in Eclipse IDE"

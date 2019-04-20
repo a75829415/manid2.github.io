@@ -3,13 +3,11 @@ title: "About popular tools used in C++ project development"
 excerpt: "Short notes on popular tools used in C++ Project development. \
           Eclipse IDE, CMake and Linux."
 
-toc: true
-toc_label: "Contents"
-toc_icon: "file-alt"
-
 header:
 #  image: /assets/images/post_cpp_coding_1/header_image.png
-  teaser: /post_about_cpp_tools/header_image.png
+  teaser: post_about_cpp_tools/header_image.png
+  alt: "About popular C++ tools teaser image"
+  caption: "About popular C++ tools"
 
 categories:
   - notes
@@ -34,6 +32,12 @@ I am using Ubuntu 16.04 LTS 64bit OS. Because Ubuntu is the most popular OS for 
 
 The process of converting the source files into executables or libraries is called the <span style="color:green">build</span> step. Usually in school or competitive programming we dont focus on the Software Development. We focus on coding, data structures and algorithms, mathematics and everything we need for creating the source code. I have unintentionally ignored how to convert the plain text files (i.e. source code) into object files and link them to create an executable. Because I saw it as a trivial step in coding. It is ok for the projects with a few files like 5 or 10 source files as in the case of most college projects. When the number of source files increase to 1,000 or 10,000 with different executables or object archives to build then it will be quite hard and time consuming to do one by one. Hence we write a script to execute the build step for each binary and also to do some additional tasks like generating the documentation files, running the unit tests and creating the package for the software. This is accomplished by using a <span style="color:green">build tool</span>.
 
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
+
 ## Tools
 
 ### Make
@@ -48,6 +52,12 @@ The process of <span style="color:#0052cc">compiling</span>, <span style="color:
 It is used by many popular open source projects such as the [OpenCV][5], [Google Test][6]. I got introduced to CMake when learning OpenCV for my image processing projects. As we know OpenCV is a multi-platform image processing and computer vision library, it achieves building on multiple platforms using CMake. I have spent a considerable amount of time trying to understand how OpenCV software is built, tested, packaged and deployed. It is quite fascinating that all these steps in OpenCV are automated. Human interference  is needed only for developing the code and reviewing the test results. Can't wait to write about one of my C++ hobby project where I can show the practical use of CMake and its advantages in a large C++ project.
 
 By using CMake we make the C++ projects to be able to build in multiple platforms using the same build scripts. We learn more with a practical project. I use CMake for all my projects. In the next blog post I'll explain the software development steps in C++ projects where I make use of the CMake to build, run tests and generate the documentation for the project.
+
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 ### IDE
 
