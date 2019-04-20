@@ -9,7 +9,7 @@ action_btn:
   - label: "Consult Me"
     fa_icon : "fas fa-phone-volume"
     class: "btn btn-lg btn-outline-success"
-    url: "#"
+    url: "/consult-me/"
   - dropdown: false
 
 feature_rows:

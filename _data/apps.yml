@@ -1,5 +1,8 @@
 # list of apps
-apps:
-  - title: "LWT"
-    description: "Simple, elegant and efficient theme for solo freelancers."
+links:
+  - title: "Lone Wolf Theme"
+    headline: "Simple, elegant and efficient theme for solo freelancers."
+    description: "A jekyll theme using Bootstrap 4 frontend to empower \
+    individual business persons."
     url: "https://manid2.github.io/lone-wolf-theme/"
+    icon: "assets/images/lwt-logo-v1.svg"
