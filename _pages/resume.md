@@ -4,4 +4,10 @@ permalink: /resume/
 title: "Resume"
 ---
 
-<a href="https://drive.google.com/file/d/1JhgMyejYLkW7ItGtbIZdhYryqTodKmWz/view?usp=sharing" class="btn btn-primary">Download</a>
+[//]: # (Link to google drive restricts access to resume as)
+[//]: # (cloud storage sites are blocked in some networks.)
+[//]: # (Hence using site's local file.)
+
+{%- capture resume-link -%}{{ "/assets/docs/ManiKumarResume_2col.pdf" | relative_url }}{%- endcapture -%}}
+
+<a href="{{ resume-link }}" class="btn btn-primary">Download</a>
