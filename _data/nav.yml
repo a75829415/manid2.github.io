@@ -2,13 +2,13 @@
 header:
   - title: "Resume"
     url: "/resume/"
-    description: "My latest resume for your reference."
+    description: "Latest resume for your reference."
   - title: "Blog"
     url: "/blog/"
     description: "List of tech articles."
   - title: "About"
     url: "/about/"
-    description: "A little story about me."
+    description: "Short story about me."
 
 # footer links
 footer:
