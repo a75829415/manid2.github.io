@@ -1,8 +1,5 @@
 # header links
 header:
-  - title: "Resume"
-    url: "/resume/"
-    description: "Latest resume for your reference."
   - title: "Blog"
     url: "/blog/"
     description: "List of tech articles."
