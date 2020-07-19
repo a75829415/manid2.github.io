@@ -6,17 +6,15 @@ permalink: /apps/
 
 {%- assign apps = site.data.apps.links -%}
 
-{%- for app in apps -%}
-{%- assign img_url = app.url | append: app.icon -%}
-{%- assign img_alt = app.title | append: ' logo' -%}
-
-<h2 id="{{ app.title | slugify }}">
-    <img src="{{ img_url }}" alt="{{ img_alt }}" class="rounded float-left m-1"  width=32 height=32>
-    <a href="{{ app.url }}" title="Go to {{ app.title }}">
-        <span class="text-primary">{{ app.title }}</span>
-    </a>
-</h2>
-
-<p class="lead">{{ app.headline }}</p>
-<p>{{ app.description }}</p>
-{%- endfor -%}
+<ul>
+  {%- for app in apps -%}
+    <li id="{{ app.title | slugify }}">
+      <a href="{{ app.url }}" title="Go to {{ app.title }}">
+        {{ app.title }}
+      </a>
+      <p class="font-italic text-muted">
+        {{ app.headline }}<br>
+      </p>
+    </li>
+  {%- endfor -%}
+</ul>
