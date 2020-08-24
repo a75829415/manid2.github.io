@@ -17,4 +17,9 @@ feature_rows:
     url: "/blog/"
     img_path: "feature_rows/mani_pexels_blog_write.jpg"
     img_alt: "Blog"
+  - title: "Projects"
+    excerpt: "List of useful projects."
+    url: "/projects/"
+    img_path: "feature_rows/mani_pexels_projects_ideas.jpg"
+    img_alt: "Projects"
 ---
